@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+void SwapAdd(int a, int b) {
+	a = a + b;
+	b = a - b;
+	a = a - b;
+
+	cout << "Results using swap with add/sub: " << endl;
+	cout << "a: " << a << endl;
+	cout << "b: " << b << endl;
+
+}
+
+void SwapMul(int a, int b) {
+	a = a * b;
+	b = a / b;
+	a = a / b;
+
+	cout << "Results using swap with mul/div: " << endl;
+	cout << "a: " << a << endl;
+	cout << "b: " << b << endl;
+
+}
+
+int main() {
+	int a = 10;
+	int b = 20;
+
+	SwapAdd(a, b);
+	SwapMul(a, b);
+
+	return 0;
+}
